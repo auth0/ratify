@@ -1,6 +1,6 @@
 var assert = require('assert'),
 	plugin = require('../../lib/ratify.js'),
-	Hapi = require('hapi');
+	Hapi = require('@hapi/hapi');
 
 before(async function() {
 	server = new Hapi.Server({ port: '8085', host: 'localhost', routes: { cors: true }});

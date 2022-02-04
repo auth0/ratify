@@ -6,27 +6,19 @@
   ],
   "version": "4.1.2-0",
   "dependencies": {
+    "@hapi/boom": "^9.1.4",
+    "@hapi/hoek": "^9.2.1",
+    "capitalize": "^2.0.4",
     "hoek": "^3.0.4",
-    "z-schema": "^4.1.1",
-    "z-schema-errors": "^0.2.0",
-    "capitalize": "^1.0.0",
-    "lodash": "^3.9.1",
-    "boom": "^3.0.0",
-    "is-stream": "1.0.1"
+    "is-stream": "1.0.1",
+    "lodash": "^4.17.21",
+    "z-schema": "^5.0.2",
+    "z-schema-errors": "^0.2.1"
   },
   "devDependencies": {
-    "mocha": "^3.4.2",
+    "@hapi/hapi": "^20.2.1",
     "jshint": "2.x.x",
-    "travis-cov": "0.x.x",
-    "blanket": "1.x.x",
-    "rewire": "2.x.x",
-    "coveralls": "2.x.x",
-    "mocha-lcov-reporter": "0.x.x",
-    "hapi": "^17.0.0",
-    "catbox-memory": "^2.0.1"
-  },
-  "peerDependencies": {
-    "hapi": ">=17.x.x"
+    "mocha": "^3.4.2"
   },
   "keywords": [
     "hapi",
@@ -50,22 +42,7 @@
     "lint": "jshint lib/* --config test/jshint/config.json",
     "pretest": "npm run lint",
     "test": "mocha --recursive --reporter spec --timeout 3000 test",
-    "test-cov": "mocha --require blanket --recursive --timeout 3000 -R travis-cov test",
-    "test-lcov": "mocha --require blanket --recursive --timeout 3000 -R mocha-lcov-reporter test | ./node_modules/coveralls/bin/coveralls.js",
-    "test-cov-html": "mocha --require blanket --recursive --timeout 3000 -R html-cov test > test/coverage.html",
     "clean": "rm -fr node_modules"
-  },
-  "config": {
-    "blanket": {
-      "pattern": "//^((?!/node_modules/)(?!/test/).)*$/ig",
-      "onlyCwd": true,
-      "data-cover-flags": {
-        "branchTracking": true
-      }
-    },
-    "travis-cov": {
-      "threshold": 84
-    }
   },
   "license": "MIT"
 }

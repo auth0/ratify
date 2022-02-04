@@ -7,3 +7,5 @@ test/coverage*
 
 #IDE
 .idea
+
+/package-lock.json
