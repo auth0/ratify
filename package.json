@@ -9,10 +9,9 @@
     "@hapi/boom": "^9.1.4",
     "@hapi/hoek": "^9.2.1",
     "capitalize": "^2.0.4",
-    "hoek": "^3.0.4",
     "is-stream": "1.0.1",
     "lodash": "^4.17.21",
-    "z-schema": "^5.0.2",
+    "z-schema": "3.19.0",
     "z-schema-errors": "^0.2.1"
   },
   "devDependencies": {
