@@ -10,7 +10,7 @@
     "z-schema": "^4.1.1",
     "z-schema-errors": "^0.2.0",
     "capitalize": "^1.0.0",
-    "lodash": "^3.9.1",
+    "lodash": "^4.17.20",
     "boom": "^3.0.0",
     "is-stream": "1.0.1"
   },
