@@ -1,7 +1,7 @@
 ratify
 ======
 
-A Hapi plugin for validating the schema of path, query, request body, and response body params using [JSON-schema](http://json-schema.org/), while providing documenation for your end points via [Swagger](https://helloreverb.com/developers/swagger)
+A Hapi plugin for validating the schema of path, query, request body, and response body params using [JSON-schema](http://json-schema.org/), while providing documentation for your endpoints via [Swagger](https://helloreverb.com/developers/swagger)
 
 [![Build Status](https://secure.travis-ci.org/mac-/ratify.png)](http://travis-ci.org/mac-/ratify)
 [![Coverage Status](https://coveralls.io/repos/mac-/ratify/badge.png)](https://coveralls.io/r/mac-/ratify)
@@ -64,7 +64,7 @@ Defaults to `'http://localhost'`
 
 ### `startingPath`
 
-The path at which all of the swagger routes begin at. This is the endpoint you would pass to an instance of the swagger UI.
+The path at which all of the swagger routes begin at. This is the endpoint you would pass to an instance of the Swagger UI.
 
 Defaults to `'/api-docs'`
 
@@ -143,7 +143,7 @@ In addition to the JSON schema defined types, ratify allows you to specify "file
 
 #### Type Conversion
 
-In the process of validating the properties based on the schema, ratify will attempt to convert path, header, and query params to the type defined in the schema. For example, if you have a query paramter called `limit` and it's type is `number`, since all query parameters are parsed as strings by Hapi, ratify will convert the string to a number.
+In the process of validating the properties based on the schema, ratify will attempt to convert path, header, and query params to the type defined in the schema. For example, if you have a query parameter called `limit` and its type is `number`, since all query parameters are parsed as strings by Hapi, ratify will convert the string to a number.
 
 Ratify can also specifically convert query parameters that are intended to be arrays. For example, both of the following query strings will result in a property called `types` having an array value:
 
@@ -160,7 +160,7 @@ Result:
 
 ### Swagger Documentation
 
-Ratify automatically generates routes that produce JSON in the format of the [Swagger API Specification](https://github.com/wordnik/swagger-core). In order to ge tthe most of the documentation, it's best to ensure there are descriptions to all your parameters as allowed by the JSON schema spec.
+Ratify automatically generates routes that produce JSON in the format of the [Swagger API Specification](https://github.com/wordnik/swagger-core). In order to get the most of the documentation, it's best to ensure there are descriptions to all your parameters as allowed by the JSON schema spec.
 
 ## Version Compatibility
 
