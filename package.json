@@ -17,7 +17,7 @@
   "devDependencies": {
     "blanket": "1.x.x",
     "catbox-memory": "^2.0.1",
-    "coveralls": "2.x.x",
+    "coveralls": "3.0.0",
     "hapi": "^17.0.0",
     "jshint": "2.x.x",
     "mocha": "^10.2.0",
